@@ -1,10 +1,18 @@
 name: Test sm runner
 
-on: [push]
+on: 
+  pull_request:
+    branches:
+      - main
 
 jobs:
   init:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Run init job"
-      - run: echo $HOSTNAME
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        run: echo "Run build step"
