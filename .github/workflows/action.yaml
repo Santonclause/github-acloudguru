@@ -9,5 +9,5 @@ jobs:
   init:
     runs-on: self-hosted
     steps:
-      run: echo "Run init job"
-      run: echo $HOSTNAME
+      - run: echo "Run init job"
+      - run: echo $HOSTNAME
