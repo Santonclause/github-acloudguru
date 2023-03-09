@@ -3,7 +3,7 @@ name: Test sm runner
 on: 
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   init:
